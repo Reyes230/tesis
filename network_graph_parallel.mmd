@@ -1,0 +1,35 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	agent_a(agent_a)
+	tools_a(tools_a)
+	agent_b(agent_b)
+	tools_b(tools_b)
+	adapter_b(adapter_b)
+	sentiment_pipeline(sentiment_pipeline)
+	trend_pipeline(trend_pipeline)
+	join_node(join_node)
+	agent_e(agent_e)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> agent_a;
+	adapter_b --> sentiment_pipeline;
+	adapter_b --> trend_pipeline;
+	agent_a -.-> __end__;
+	agent_a -.-> agent_b;
+	agent_a -. &nbsp;tools&nbsp; .-> tools_a;
+	agent_b -. &nbsp;__end__&nbsp; .-> adapter_b;
+	agent_b -. &nbsp;tools&nbsp; .-> tools_b;
+	join_node --> agent_e;
+	sentiment_pipeline --> join_node;
+	tools_a --> agent_a;
+	tools_b --> agent_b;
+	trend_pipeline --> join_node;
+	agent_e --> __end__;
+	agent_a -.-> agent_a;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

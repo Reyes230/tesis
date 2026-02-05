@@ -1,0 +1,11 @@
+Auditoria del Modelo
+Coherencia C_v: 0.3877
+
+Desglose de Temas:
+       Sentiment  Text
+Topic                 
+4      -0.348440    14
+0      -0.228372    21
+3      -0.225996    15
+1      -0.132537    18
+2      -0.026941    16

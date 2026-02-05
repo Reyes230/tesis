@@ -1,0 +1,31 @@
+# --- Modelos Pesados ---
+models/
+*.bin
+*.pt
+*.pth
+*.h5
+*.safetensors
+
+# --- Entornos Virtuales y Cache ---
+venv/
+env/
+.env
+__pycache__/
+*.pyc
+
+analysis/
+auditoria_graficos/
+data/
+modelos/
+modelosnot/
+REPORTES_TESIS/
+datasets/
+results/
+
+*.json
+*.jsonl
+
+# --- Otros ---
+.DS_Store
+wandb/
+*.zip

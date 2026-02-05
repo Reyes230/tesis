@@ -1,0 +1,42 @@
+# El archivo `requirements.txt`
+# --- Data Science & ML ---
+numpy
+pandas
+scikit-learn
+torch
+tqdm
+
+# --- Hugging Face & Fine-Tuning ---
+transformers
+datasets
+tokenizers
+huggingface-hub
+accelerate
+evaluate
+
+# --- Topic Modeling & Clustering ---
+bertopic
+hdbscan
+umap-learn
+sentence-transformers
+
+# --- Sentiment Analysis ---
+pysentimiento
+
+# --- LangChain & Agents ---
+langchain
+langgraph
+langchain-community
+langchain-openai
+langchain-google-genai
+
+# --- Web App & Visualization ---
+streamlit
+plotly
+matplotlib
+networkx
+
+# --- Data Sources & Utils ---
+python-dotenv
+praw
+tweepy
